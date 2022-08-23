@@ -49,7 +49,7 @@ public class Main {
 
     public static boolean isLiteVersionForOS(int clientDeviceYear, int ClientType, int TypeOS) {
        int currentYear = LocalDate.now().getYear();
-        return  ClientType==0&&clientDeviceYear <currentYear;
+        return  ClientType==TypeOS&&clientDeviceYear <currentYear;
     }
 
     public static void printNumberOfDeliveryDays( int deliveryDistance) {
